@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <!-- pnk untuk CSS -->
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <!-- Script untuk JS -->
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <!-- Bagian Header -->
+    <header>
+        <h1>BMI Calculator</h1><hr>
+    </header>
+    <!-- Konten Utama -->
+    <main>
+        <div id="lainnya">
+            <h2>Body Mass Index (BMI)</h2><br>
+            <p>Body Mass Index (BMI) adalah metode hitung-hitungan mudah yang dapat memberikan informasi dasar terhadap masalah berat badan Anda secara keseluruhan. Angka ini bisa berperan sebagai tanda peringatan bahaya dan melindungi seseorang dari kematian akibat penyakit kronis terkait obesitas.</p>
+        </div>
+        <div class="parent">
+            <div class="child" id="bmi-calculator">
+                <h2>Hitung BMI</h2><br>
+                <form id="informasi">
+                    <label>Jenis Kelamin:</label><br>
+                    <input type="radio" id="pria" name="sex" value="Pria">
+                    <label for="pria">Pria</label><br>
+                    <input type="radio" id="wanita" name="sex" value="Wanita">
+                    <label for="wanita">Wanita</label><br><br><br>
+                    <label for="berat">Berat badan(Kg):</label><br>
+                    <input type="text" id="berat" placeholder="Berat badan" class="info">
+                    <br><br>
+                    <label for="usia">Usia(Tahun):</label><br>
+                    <input type="text" id="usia" placeholder="Usia" class="info">
+                    <br><br>
+                    <label for="tinggi">Tinggi badan(Cm):</label><br>
+                    <input type="text" id="tinggi" placeholder="Tinggi badan" class="info">
+                </form>
+                <br><br>
+                <div class="button">
+                    <button onclick="calculate()">Hitung BMI</button>
+                </div>
+            </div>
+            <div class="child" id="result">
+                <h2>Hasil:</h2><br>
+                <p id="gender"></p>
+                <p id="condition"></p>
+                <h3 id="bmi"></h3>
+                <p id="notes"></p>
+            </div>
+        </div>
+    </main>
+        <footer>
+            <p><i>Created by: Nelson Richie Richardo</i></p>
+        </footer>
+</body>
+</html>
